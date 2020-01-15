@@ -49,7 +49,7 @@ public class Robot extends TimedRobot {
       //mLeftMaster.set(ControlMode.Velocity, 1000);
     }
     mLeftMaster.set(ControlMode.PercentOutput, m_stick.getRawAxis(1)); 
-    SmartDashboard.putNumber("flywheel ticks/100ms", mLeftMaster.getSelectedSensorPosition(0));
+    SmartDashboard.putNumber("flywheel ticks/100ms", mLeftMaster.getSelectedSensorVelocity(0));
   }
 
   /**
